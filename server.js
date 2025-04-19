@@ -9,9 +9,9 @@ import dotenv from 'dotenv';
 dotenv.config(); // Load env variables from .env file
     // Configuration
     cloudinary.config({
-        cloud_name: 'dggulw4uq',
-        api_key: '383773851561917',
-        api_secret: '77dSFXvQJVuoXgk2uH3m1zvAUTo' // Click 'View API Keys' above to copy your API secret
+        cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+        api_key: process.env.CLOUDINARY_API_KEY,
+        api_secret: process.env.CLOUDINARY_API_SECRET
     });
 
 const PORT = 1000;
